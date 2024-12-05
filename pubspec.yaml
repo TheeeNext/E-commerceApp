@@ -1,0 +1,43 @@
+name: minimal_ecommerce
+description: A minimal e-commerce app built with Flutter.
+
+# Versão do aplicativo
+version: 1.0.0+1
+
+# Configuração do SDK do Dart
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Para carregar fontes do Google
+  google_fonts: ^4.0.3
+
+  # Para carregar ícones SVG
+  flutter_svg: ^1.1.6
+
+  # Gerenciamento de estado (opcional, use se necessário)
+  provider: ^6.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# Configuração dos assets do aplicativo
+flutter:
+  uses-material-design: true
+
+  # Lista de assets
+  assets:
+    - assets/images/products/
+    - assets/images/backgrounds/
+    - assets/icons/
+
+  # Fontes personalizadas
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
